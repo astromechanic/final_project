@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Топ политических терминов</title>
+	<style>
+	.transparent {
+	opacity: 0.90;
+	}
+  </style>
+</head>
+
+<body>
+
+<h1>Самые частотные политические термины в газете "Коммерсантъ"</h1>
+
+{% for name, url in urls.items() %}
+<a href="{{ url }}">{{ name }}</a>
+{% endfor %}
+<br>
+<br>
+
+
+<img src="{{url_for('static', filename='km.jpg')}}" width = "100%" "class="transparent">
+</body>
+</html>
