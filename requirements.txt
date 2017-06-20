@@ -3,7 +3,3 @@
  pymystem3==0.1.5
  requests==2.13.0
  matplotlib==2.0.2
- urllib.request
- re
- Mystem
- numpy
